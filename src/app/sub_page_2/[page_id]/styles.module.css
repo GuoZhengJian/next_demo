@@ -1,0 +1,10 @@
+.bg_1 {
+    background-color: #6ab04c;
+}
+
+.bg_2 {
+    background-color: #e67e22;
+    margin: 10%;
+}
+
+/* // 注意: 该文件夹内的样式属性, 可以使用类似面向对象的方式定义并调用, 不需要像以前那样在html指定类如id="值"的这种样式调用 */
