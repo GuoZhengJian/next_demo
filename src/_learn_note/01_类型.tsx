@@ -22,16 +22,6 @@ const new_x1 = x1
 console.log('01_类型 | ', 'new_x1:', typeof(new_x1), new_x1, new_x1 == x1)
 // 输出: new_x1: number 8 true
 
-let { dict_1, dict_2, dict_3} = {dict_1:1, dict_2:2, dict_3:3}   // 对象解构
-let new_dict_1 = dict_1
-console.log('01_类型 | ', 'new_dict_123:', typeof(new_x1), new_dict_1, dict_1, new_dict_1 == dict_1)
-// 输出: new_dict_123: number 8 true
-
-let o = {dict_5:1, dict_6:2, dict_7:3}
-let { dict_5, dict_6, dict_7 } = o   // 对象解构
-let new_dict_5 = o.dict_5
-console.log('01_类型 | ', 'new_dict_567:', typeof(new_x1), new_dict_5, dict_5, new_dict_5 == dict_5)
-// 输出: new_dict_567: number 8 true
 
 // 数组-------------------------------------------------------
 
@@ -68,9 +58,13 @@ console.log('01_类型 | ', '数组解构3:', typeof(g), g, [g])
 
 // 对象解构-------------------------------------------------------
 
+let { dict_1, dict_2, dict_3} = {dict_1:1, dict_2:'2', dict_3:3}   // 对象解构
+console.log('01_类型 | ', '对象解构1:', dict_1, dict_2, dict_3)     // 输出: 1 2 3
+
+
 let dict = {dict_a: 1, dict_b: '2', dict_c: 3}
 let { dict_a, dict_b, dict_c } = dict   // 对象解构
-console.log('01_类型 | ', '对象解构1:', typeof(dict_a), typeof(dict_b), typeof(dict_c), dict_a, dict_b, dict_c, { dict_a, dict_b, dict_c })
+console.log('01_类型 | ', '对象解构2:', typeof(dict_a), typeof(dict_b), typeof(dict_c), dict_a, dict_b, dict_c, { dict_a, dict_b, dict_c })
 // 对象解构1: number string number 1 2 3 { dict_a: 1, dict_b: '2', dict_c: 3 }
 
 // "对象解构" 的其他用法和 "数组解构" 相同, 包括:
